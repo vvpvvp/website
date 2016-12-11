@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
 	/* open folding content */
 	gallery.on('click', 'a', function(event){
 		event.preventDefault();
-		openItemInfo($(this).attr('href'));
+		openItemInfo($(this).attr('link'));
 	});
 
 	/* close folding content */
@@ -43,14 +43,13 @@ jQuery(document).ready(function($){
 		if( bool ) {
 			/* load and show new content */
 			var foldingContent = foldingPanel.find('.cd-fold-content');
-			foldingContent.load(url, function(event){
-				setTimeout(function(){
-					$('body').addClass('overflow-hidden');
-					foldingPanel.addClass('is-open');
-					mainContent.addClass('fold-is-open');
-				}, 100);
-				
-			});
+			var c = $(".content ."+url);
+			foldingContent.html(c.html());
+			setTimeout(function(){
+				$('body').addClass('overflow-hidden');
+				foldingPanel.addClass('is-open');
+				mainContent.addClass('fold-is-open');
+			}, 100);
 		} else {
 			/* close the folding panel */
 			var mq = viewportSize();

@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: #544173;
+  color: #6747a7;
   text-decoration: none;
 }
 
@@ -671,4 +671,53 @@ Javascript disabled
   font-weight: 400;
   src: local('Quicksand Regular'), local('Quicksand-Regular'), url(./font/font.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.cd-fold-content h2 a{
+  font-size:12px; 
+}
+
+.cd-fold-content h2 a.title{
+  font-size: 25px;
+}
+
+.cd-fold-content p {
+    line-height: 2;
+    font-size: 1em;
+    color: #696969;
+    margin: 0;
+    font-family: 'Quicksand',"Vollkorn", serif;
+}
+
+.cd-fold-content em {
+    line-height: 2;
+    font-size: 1em;
+    margin: 0;
+}
+
+.cd-fold-content h2 {
+    margin-top: 39px;
+    font-size: 24px;
+    line-height: 2;
+    color: #6747a7;
+    font-family: 'Quicksand',"Vollkorn", serif;
+}
+.cd-fold-content h2 a:hover{
+    text-decoration: underline;
+}
+
+.content {
+    display: none;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(113, 113, 113, 0.44);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(113, 113, 113, 0.8);
 }
