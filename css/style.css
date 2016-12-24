@@ -15,7 +15,10 @@ body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   color: #363558;
-  background-color: #1c1726;
+  background-color: #8e8d8d;
+  /* background-image: url(../images/bg.png); */
+  /* background-position: left bottom; */
+  /* background-repeat: no-repeat; */
 }
 
 a {
@@ -79,7 +82,7 @@ header p {
 }
 
 header span {
-    color: #fee593;
+    color: #fffe74;
 }
 
 header .user-img {
@@ -93,7 +96,7 @@ header .user-img {
 header .user-img img {
     width: 80%;
     border-radius: 150px;
-    border: 10px solid rgba(255, 255, 255, 0.26);
+    border: 10px solid rgba(255, 254, 116, 0.76);
 }
 @media only screen and (min-width: 600px) {
   header p{
