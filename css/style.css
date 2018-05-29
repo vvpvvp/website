@@ -296,6 +296,7 @@ Main content
     width: 50%;
     float: left;
     height: 520px;
+    height: 50vh;
     -webkit-transition: -webkit-transform 0.5s 0.4s;
     -moz-transition: -moz-transform 0.5s 0.4s;
     transition: transform 0.5s 0.4s;
